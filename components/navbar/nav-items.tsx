@@ -30,6 +30,7 @@ const NavItems = ({
           {route.subRoutes ? (
             <NewDropDown
               title={route.title}
+              handleToggle={handleToggle}
               subRoutes={route.subRoutes}
               itemsColor={itemsColor}
               navItemsClass={NavItemsClass}

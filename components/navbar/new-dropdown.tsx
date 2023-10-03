@@ -15,6 +15,7 @@ interface Dropdownitems {
 
 interface NavDropdownProps {
   title: string;
+  handleToggle?: () => void;
   itemsColor?: string;
   navItemsClass: string;
   subRoutes: Dropdownitems[];
@@ -22,12 +23,11 @@ interface NavDropdownProps {
 
 const NewDropDown = ({
   title,
+  handleToggle,
   itemsColor,
   navItemsClass,
   subRoutes,
 }: NavDropdownProps) => {
-  const { handleToggle } = useToggle();
-
   return (
     <div className="relative">
       <Button
