@@ -47,6 +47,7 @@ const NewDropDown = ({
                     <>
                       <div className="flex items-center justify-between">
                         <Link
+                          onClick={handleToggle}
                           href={route.path}
                           className=" w-full transition duration-300 hover:bg-green-600 hover:text-white p-2 rounded"
                         >
@@ -60,6 +61,7 @@ const NewDropDown = ({
                             {route.path && (
                               <li>
                                 <Link
+                                  onClick={handleToggle}
                                   href={route.path}
                                   className="flex items-center justify-between w-full transition duration-300 hover:bg-green-600 hover:text-white p-2 rounded"
                                 >
