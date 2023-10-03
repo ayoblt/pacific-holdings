@@ -1,6 +1,4 @@
 import LinkButton from "@/components/shared/link-button";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 const Header = () => {
   return (

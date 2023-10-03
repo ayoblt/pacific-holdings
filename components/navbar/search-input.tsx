@@ -1,13 +1,4 @@
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-  CommandShortcut,
-} from "@/components/ui/command";
+import { Command, CommandInput } from "@/components/ui/command";
 import { cn } from "@/lib/utils";
 
 export default function SearchInput({ className }: { className?: string }) {

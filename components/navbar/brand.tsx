@@ -1,6 +1,5 @@
-import Link from "next/link";
-import React from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import LogoIcon from "../shared/logo";
 
 import { useScroll } from "@/hooks/use-scroll";

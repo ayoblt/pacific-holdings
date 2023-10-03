@@ -1,6 +1,5 @@
 import PageHeader from "@/components/page-header";
 import { CompanyData } from "@/data/companies-data";
-import { NavRoutes } from "@/data/nav-routes";
 
 // export function generateStaticParams() {
 //   const companiesRoute = NavRoutes.find(

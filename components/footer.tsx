@@ -1,5 +1,4 @@
 import React from "react";
-import { Phone, Mail, MapPin } from "lucide-react";
 
 import { ContactData } from "@/data/contact";
 import Link from "next/link";

@@ -3,9 +3,9 @@
 import NavItems from "@/components/navbar/nav-items";
 import { Search } from "lucide-react";
 
-import { NavItemsProps } from "./route-type";
-import LinkButton from "../shared/link-button";
 import { usePathname } from "next/navigation";
+import LinkButton from "../shared/link-button";
+import { NavItemsProps } from "./route-type";
 
 const DesktopMenu = ({ navRoutes }: NavItemsProps) => {
   const pathname = usePathname();

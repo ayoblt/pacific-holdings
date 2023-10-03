@@ -1,6 +1,5 @@
+import { ToggleContext, ToggleContextType } from "@/contexts/toggle-context";
 import { useContext } from "react";
-import { ToggleContext } from "@/contexts/toggle-context";
-import { ToggleContextType } from "@/contexts/toggle-context";
 
 export const useToggle = (): ToggleContextType => {
   const context = useContext(ToggleContext);

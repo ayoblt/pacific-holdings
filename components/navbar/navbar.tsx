@@ -1,10 +1,10 @@
 "use client";
 
-import Hamburger from "./hamburger";
-import DesktopMenu from "./desktop-menu";
-import MobileMenu from "./mobile-menu";
-import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
+import DesktopMenu from "./desktop-menu";
+import Hamburger from "./hamburger";
+import MobileMenu from "./mobile-menu";
 
 import { useScroll } from "@/hooks/use-scroll";
 import { useToggle } from "@/hooks/use-toggle";

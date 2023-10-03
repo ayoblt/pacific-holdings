@@ -1,7 +1,6 @@
 import LinkButton from "@/components/shared/link-button";
 import LogoIcon from "@/components/shared/logo";
 import Image from "next/image";
-import { OlorunsogoImageData } from "@/data/olorunsogo";
 
 const About = () => {
   return (

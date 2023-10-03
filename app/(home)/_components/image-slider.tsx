@@ -1,17 +1,16 @@
 "use client";
 import Image from "next/image";
 // components/SwiperCarousel.js
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { OlorunsogoImageData } from "@/data/olorunsogo";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const ImageSlider = () => {
   return (

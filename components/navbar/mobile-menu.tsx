@@ -1,11 +1,10 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useToggle } from "@/hooks/use-toggle";
 import { Button } from "../ui/button";
 import NavItems from "./nav-items";
 import { NavItemsProps } from "./route-type";
 import SearchInput from "./search-input";
-import { useToggle } from "@/hooks/use-toggle";
 
 const MobileMenu = ({ navRoutes }: NavItemsProps) => {
   const itemsColor = "text-gray-700";

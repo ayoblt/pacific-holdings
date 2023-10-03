@@ -1,12 +1,9 @@
 import Link from "next/link";
-import React from "react";
-import { NavDropdown } from "../../_bin/nav-dropdown";
 
-import { NavItemsProps } from "./route-type";
 import { useScroll } from "@/hooks/use-scroll";
-import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import NewDropDown from "./new-dropdown";
+import { NavItemsProps } from "./route-type";
 
 interface NavItemsMainProps extends NavItemsProps {
   itemsColor?: string;
