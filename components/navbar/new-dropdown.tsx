@@ -38,7 +38,7 @@ const NewDropDown = ({
         )}
       >
         {title}
-        <SubLinks className="top-full left-1/2 md:-translate-x-1/2 group-hover/main:scale-100 group-hover/main:opacity-100 text-gray-800">
+        <SubLinks className="top-full left-1/2 md:-translate-x-1/2 group-hover/main:scale-100 group-hover/main:opacity-100 text-gray-800 flex flex-col items-start">
           {subRoutes.map((route) => (
             <React.Fragment key={route.title}>
               {route.path && (
