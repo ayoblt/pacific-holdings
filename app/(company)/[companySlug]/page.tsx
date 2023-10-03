@@ -6,17 +6,15 @@ export function generateStaticParams() {
   const companiesRoute = NavRoutes.find(
     (item) => item.title.toLowerCase() === "companies"
   );
-  if (companiesRoute) {
-    return companiesRoute.subRoutes?.map((route) => ({
-      companySlug: route.path.replace("/", ""),
-    }));
-  }
+  return companiesRoute?.subRoutes?.map((route) => ({
+    companySlug: route.path.replace("/", ""),
+  }));
 }
 
 export default function CompanyPage({
   params,
 }: {
-  params: { companySlug: any };
+  params: { companySlug: string };
 }) {
   const { companySlug } = params;
   // console.log(params);
