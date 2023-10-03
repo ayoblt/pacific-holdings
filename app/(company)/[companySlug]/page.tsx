@@ -13,7 +13,11 @@ export function generateStaticParams() {
   }
 }
 
-export default function CompanyPage({ params }: { params: { companySlug: string } }) {
+export default function CompanyPage({
+  params,
+}: {
+  params: { companySlug: any };
+}) {
   const { companySlug } = params;
   // console.log(params);
 
