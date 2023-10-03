@@ -5,6 +5,7 @@ import { Button } from "../ui/button";
 import NavItems from "./nav-items";
 import { NavItemsProps } from "./route-type";
 import SearchInput from "./search-input";
+import Link from "next/link";
 
 const MobileMenu = ({ navRoutes }: NavItemsProps) => {
   const itemsColor = "text-gray-700";
@@ -20,8 +21,13 @@ const MobileMenu = ({ navRoutes }: NavItemsProps) => {
           handleToggle={handleToggle}
         />
         <div className="pt-5 w-full">
-          <Button size="lg" className="capitalize text-base text-white w-full">
-            Get in touch
+          <Button
+            onClick={handleToggle}
+            size="lg"
+            className="capitalize text-base text-white w-full"
+            asChild
+          >
+            <Link href="/contact-us">Get in touch</Link>
           </Button>
         </div>
       </div>
