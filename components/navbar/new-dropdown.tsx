@@ -78,6 +78,7 @@ const NewDropDown = ({
                     </>
                   ) : (
                     <Link
+                      onClick={handleToggle}
                       href={route.path}
                       className="flex items-center justify-between w-full transition duration-300 hover:bg-green-600 hover:text-white p-2 rounded"
                     >
