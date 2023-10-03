@@ -2,14 +2,32 @@ import PageHeader from "@/components/page-header";
 import { CompanyData } from "@/data/companies-data";
 import { NavRoutes } from "@/data/nav-routes";
 
-export function generateStaticParams() {
-  const companiesRoute = NavRoutes.find(
-    (item) => item.title.toLowerCase() === "companies"
-  );
-  return companiesRoute?.subRoutes?.map((route) => ({
-    companySlug: route.path.replace("/", ""),
-  }));
-}
+// interface Company {
+//   title: string;
+//   slug: string;
+//   body: string[];
+//   subCompanies?: SubCompany[];
+// }
+
+// interface SubCompany {
+//   title: string;
+//   slug: string;
+//   address: string;
+//   incorporationDate: string;
+//   body: string[];
+//   endorserment: string;
+//   directors: string[];
+// }
+
+// export async function generateStaticParams() {
+//   const response = await fetch("/api/companies");
+//   const data: Company[] = await response.json();
+//   console.log(data);
+
+//   return data.map((item) => ({
+//     companySlug: item.slug,
+//   }));
+// }
 
 export default function CompanyPage({
   params,
@@ -17,10 +35,8 @@ export default function CompanyPage({
   params: { companySlug: string };
 }) {
   const { companySlug } = params;
-  // console.log(params);
 
   const company = CompanyData.find((company) => company.slug === companySlug);
-  // console.log(company);
 
   return (
     <div className="pb-20">
